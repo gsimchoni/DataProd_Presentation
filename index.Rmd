@@ -1,7 +1,8 @@
 ---
 title       : Data Products - Course Project - Presentation
-subtitle    : 
-author      : 
+subtitle    : Guess the Order of the Top 10 R Packages for 2015
+author      : Giora Simachoni
+logo        : Rlogo-1.png
 job         : 
 framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
@@ -11,7 +12,7 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
+## How familiar are you with R?
 
 1. Edit YAML front matter
 2. Write using R Markdown
