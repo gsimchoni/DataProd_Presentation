@@ -59,4 +59,4 @@ Which is the most downloaded R package of H2/2015 (Rank 1)?
 It wasn't made for fancy plotting...
 
 *** .explanation
-Yep! Dirk Eddelbuettel et al. Rcpp package, which integrates R with C++, is the most downloaded package of H2/2015.
+Dirk Eddelbuettel et al. Rcpp package, which integrates R with C++, is the most downloaded package of H2/2015.
