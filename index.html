@@ -4,7 +4,7 @@
   <title>Data Products - Course Project - Presentation</title>
   <meta charset="utf-8">
   <meta name="description" content="Data Products - Course Project - Presentation">
-  <meta name="author" content="Giora Simachoni">
+  <meta name="author" content="Giora Simchoni">
   <meta name="generator" content="slidify" />
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta http-equiv="X-UA-Compatible" content="chrome=1">
@@ -13,7 +13,9 @@
     media="only screen and (max-device-width: 480px)" >
   <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
   <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
-  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="libraries/widgets/quiz/css/demo.css"></link>
+<link rel=stylesheet href="libraries/widgets/bootstrap/css/bootstrap.css"></link>
+<link rel=stylesheet href="./assets/css/ribbons.css"></link>
 
   
   <!-- Grab CDN jQuery, fall back to local if offline -->
@@ -36,8 +38,8 @@
   </aside>
   <hgroup class="auto-fadein">
     <h1>Data Products - Course Project - Presentation</h1>
-    <h2>Guess the Top 10 R Packages for 2015 Order</h2>
-    <p>Giora Simachoni<br/></p>
+    <h2>Guess the Order of the Top 10 R Packages for 2015</h2>
+    <p>Giora Simchoni<br/></p>
   </hgroup>
   <article></article>  
 </slide>
@@ -49,22 +51,97 @@
     <h2>How familiar are you with R?</h2>
   </hgroup>
   <article data-timings="">
-    <ol>
-<li>Edit YAML front matter</li>
-<li>Write using R Markdown</li>
-<li>Use an empty line followed by three dashes to separate slides!</li>
-</ol>
+    <ul>
+<li>Many of us use R for a very limited scope of purpose. Unless you are a <a href="http://r-bloggers.com">r-bloggers</a> fanatic, chances are you&#39;re not even starting to guess what R can do</li>
+<li>For example, what is the easiest way to get the length of a string?</li>
+</ul>
+
+<pre><code class="r">nchar(&quot;encyclopedia&quot;)
+</code></pre>
+
+<p>[1] 12</p>
+
+<pre><code class="r">nchar(NA) #But what happens here?
+</code></pre>
+
+<p>[1] 2</p>
+
+<ul>
+<li>So have you ever heard of the <code>stringr</code> package and what it can do for you?</li>
+</ul>
+
+<pre><code class="r">stringr::str_c(NA)
+</code></pre>
+
+<p>[1] NA</p>
 
   </article>
   <!-- Presenter Notes -->
 </slide>
 
-<slide class="class" id="id" style="background:;">
+<slide class="" id="slide-2" style="background:;">
   <hgroup>
-    <h2>Slide 2</h2>
+    <h2>What&#39;s in the app? (1)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>This little project was made to make sure you&#39;re familiar with at least the currently top 10 most downloaded packages</li>
+<li>You&#39;ll look at a random order list of the top 10 most downloaded R packages for Jan-Jun 2015, as reported by <a href="http://kdnuggets.com">KDNuggets</a> (but don&#39;t peak!)</li>
+<li><img src="assets/img/project_screenshot.png" alt="project screenshot"></li>
+<li>You&#39;ll then have to sort this list from most downloaded (1) to least downloaded (10), press the &quot;See my results&quot; button and hope you got it right!</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>What&#39;s in the app? (2)</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The app will tell you how many correct ranks you got out of 10 (but not which :))</li>
+<li>You can try again and again</li>
+<li>And when you finally succeed - the app will also tell you how long it took!</li>
+<li>But remember - the idea is not just ordering the packages. If you find yourself unfamiliar with any of these top 10 packages, now would be a good time to find out what it does</li>
+<li>To help you get started, answer the following multiple-choice question, to get the most downloaded R package (Rank 1) - the rest is up to you...</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Jump Start</h2>
   </hgroup>
   <article data-timings="">
     
+<div class="quiz quiz-single well ">
+  <p>Which is the most downloaded R package of H2/2015 (Rank 1)?</p>
+
+<ol>
+<li>ggplot2</li>
+<li>plyr</li>
+<li><em>Rcpp</em></li>
+<li>RColorBrewer</li>
+</ol>
+
+  <button class="quiz-submit btn btn-primary">Submit</button>
+  <button class="quiz-toggle-hint btn btn-info">Show Hint</button>
+  <button class="quiz-show-answer btn btn-success">Show Answer</button>
+  <button class="quiz-clear btn btn-danger">Clear</button>
+  
+  <div class="quiz-hint">
+  <p>It wasn&#39;t made for fancy plotting...</p>
+
+</div>
+<div class="quiz-explanation">
+  <p>Yep! Dirk Eddelbuettel et al. Rcpp package, which integrates R with C++, is the most downloaded package of H2/2015.</p>
+
+</div>
+</div>
   </article>
   <!-- Presenter Notes -->
 </slide>
@@ -81,8 +158,20 @@
     </li>
     <li>
       <a href="#" target="_self" rel='tooltip' 
-        data-slide=2 title='Slide 2'>
+        data-slide=2 title='What&#39;s in the app? (1)'>
          2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='What&#39;s in the app? (2)'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Jump Start'>
+         4
       </a>
     </li>
   </ul>
@@ -94,7 +183,19 @@
   <![endif]-->
 </body>
   <!-- Load Javascripts for Widgets -->
+  <script src="libraries/widgets/quiz/js/jquery.quiz.js"></script>
+<script src="libraries/widgets/quiz/js/mustache.min.js"></script>
+<script src="libraries/widgets/quiz/js/quiz-app.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootstrap.min.js"></script>
+<script src="libraries/widgets/bootstrap/js/bootbox.min.js"></script>
+
   
+  <script>  
+  $(function (){ 
+    $("#example").popover(); 
+    $("[rel='tooltip']").tooltip(); 
+  });  
+  </script>  
   <!-- LOAD HIGHLIGHTER JS FILES -->
   <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
   <script>hljs.initHighlightingOnLoad();</script>
