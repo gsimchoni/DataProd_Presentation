@@ -42,7 +42,7 @@ stringr::str_c(NA)
 
 * This little project was made to make sure you're familiar with at least the currently top 10 most downloaded packages
 * You'll look at a random order list of the top 10 most downloaded R packages for Jan-Jun 2015, as reported by [KDNuggets](http://kdnuggets.com) (but don't peak!)
-* ![project screenshot](assets/img/project_screenshot.png)
+* ![project screenshot](assets/img/project_screenshot.PNG)
 * You'll then have to sort this list from most downloaded (1) to least downloaded (10), press the "See my results" button and hope you got it right!
 
 --- 
